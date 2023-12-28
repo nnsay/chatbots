@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 # 2. 聊天
 
-## 启动
+## 2.1 启动
 
 - 无会话
 
@@ -31,11 +31,28 @@ python chatbot.py
 
 ![](https://raw.githubusercontent.com/nnsay/gist/main/img20231228183910.png)
 
-## 退出
+## 2.2 退出
 
 退出快捷键: Ctl + C
 
-## 调试
+## 2.3 安装全局命令
+
+克隆 repo 到本地, 进入 repo 执行下面的脚本
+
+```bash
+export GOOGLE_API_KEY=xxxx
+
+pip install -r requirements.txt
+
+mkdir -p $HOME/.local/bin
+export PATH="$HOME/.local/bin:$PATH"
+
+make install
+```
+
+![](https://raw.githubusercontent.com/nnsay/gist/main/img20231228190718.png)
+
+## 2.4 调试
 
 如果想要查看 langchain 的一些输出, 可以增加 DEBUG 环境变量, 例如:
 
