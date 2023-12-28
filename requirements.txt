@@ -1,0 +1,2 @@
+langchain==0.0.352
+langchain_google_genai==0.0.5
