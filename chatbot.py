@@ -38,11 +38,6 @@ conversation = LLMChain(llm=chat,
                         verbose=verbose,
                         memory=memory)  # 使用 conversation, 结果: string
 
-# conversation({"question": "讲个笑话"})
-# conversation({"question": "不怎么好笑"})
-# result = conversation({"question": "再说一个"})
-# print(result)
-
 while True:
     try:
         message = input("✎✎ ")
