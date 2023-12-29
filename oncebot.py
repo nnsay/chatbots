@@ -32,10 +32,12 @@ conversation = LLMChain(
 while True:
     try:
         message = input("✎✎ ")
+        if message.lower() == "exit":
+            exit()
         result = conversation.run({
             "text": message,
             "name": "JBot",
         })
         print(result)
     except KeyboardInterrupt:
-        break
+        exit()

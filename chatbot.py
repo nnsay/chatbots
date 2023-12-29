@@ -41,9 +41,11 @@ conversation = LLMChain(llm=chat,
 while True:
     try:
         message = input("✎✎ ")
+        if message.lower() == "exit":
+            exit()
         result = conversation({
             "text": message,
         })
         print(result['text'])
     except KeyboardInterrupt:
-        break
+        exit()
