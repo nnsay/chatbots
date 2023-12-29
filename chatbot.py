@@ -60,6 +60,6 @@ while True:
         result = conversation({
             "text": message,
         })
-        print(result['text'])
+        print(f"{result['text']}")
     except KeyboardInterrupt:
         exit()
