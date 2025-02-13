@@ -1,0 +1,5 @@
+[project]
+name = "chatbots"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["langchain==0.0.352", "langchain-google-genai==0.0.5"]

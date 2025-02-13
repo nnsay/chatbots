@@ -2,13 +2,10 @@
 
 ```bash
 # 仅第一次使用
-python -m venv .bot
+uv init --python 3.12
 
 # 激活虚拟环境
-source .bot/bin/activate
-
-# 安装依赖
-pip install -r requirements.txt
+uv add -r requirements.txt
 ```
 
 # 2. 聊天
@@ -18,7 +15,7 @@ pip install -r requirements.txt
 - 无会话
 
 ```bash
-python oncebot.py
+uv run oncebot.py
 ```
 
 ![](https://raw.githubusercontent.com/nnsay/gist/main/img20231228184143.png)
@@ -26,7 +23,7 @@ python oncebot.py
 - 有会话
 
 ```bash
-python chatbot.py
+uv run chatbot.py
 ```
 
 ![](https://raw.githubusercontent.com/nnsay/gist/main/img20231228183910.png)
