@@ -5,12 +5,10 @@ from langchain.prompts.chat import (
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from langchain.chains import LLMChain, ConversationChain
+from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 import getpass
 import os
-import langchain
-import readline  # NOTE: 导入 readline 可以解决 input 中 Delete 键问题
 
 if "GEMINI_API_KEY" not in os.environ:
     os.environ["GEMINI_API_KEY"] = getpass.getpass("Provide your Google API Key")
